@@ -1,12 +1,6 @@
-import './App.css';
-import Hello from './components/Hello'
+import React from "react";
+import Application from "./components/application";
 
-function App() {
-  return (
-    <div className="App">
-      < Hello />
-    </div>
-  );
-}
+const App = () => <Application />;
 
 export default App;
