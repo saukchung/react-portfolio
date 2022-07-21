@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    background-color: orange;
+}
+
+.header h1 {
+    flex: 1;
+}
+
+.header ul {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+}
