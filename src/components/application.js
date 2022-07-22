@@ -4,6 +4,7 @@ import Nav from './nav';
 import About from './about';
 import Portfolio from './portfolio';
 import Contact from './contact'
+import Resume from './resume'
 import Footer from './footer';
 
 
@@ -19,15 +20,15 @@ function Application() {
     }
     if (currentPage === 'Contact') {
       return < Contact />
-    }
+    } return < Resume />
   }
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="application">
-      < Nav />
-      < About />
-      < Portfolio />
-      < Contact />
+      < Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+      {renderPage()}
       < Footer /> 
     </div>
   );

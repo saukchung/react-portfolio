@@ -1,21 +1,33 @@
 .header {
     display: flex;
-    background-color: orange;
+    flex-wrap: wrap;
+    background-color: grey;
 }
 
 .header h1 {
     padding-left: 20px;
     flex: 1;
+    justify-content: left;
+    display: block;
 }
 
 .header ul {
     flex: 2;
     display: flex;
     justify-content: end;
-    align-items: flex-end;
+    align-items: center;
     gap: 30px;
+    padding-right: 20px;
+    list-style: none;
 }
 
 .nav-link {
     color: white;
+}
+
+.nav-link-active {
+    padding: 10px 30px;
+    color: white;
+    background-color: darkgray;
+    border-radius: 70% 30%;
 }
