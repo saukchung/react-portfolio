@@ -12,17 +12,20 @@
 }
 
 .header ul {
-    flex: 2;
+    flex: 1;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
     padding-right: 20px;
+    align-content: space-between;
     list-style: none;
 }
 
+
 .nav-link {
     color: white;
+    flex: 1;
+    padding: 10px 30px;
 }
 
 .nav-link-active {
