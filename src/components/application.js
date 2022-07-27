@@ -1,5 +1,5 @@
 import './application.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from './nav';
 import About from './about';
 import Portfolio from './portfolio';
@@ -11,6 +11,10 @@ import Footer from './footer';
 function Application() {
   const [currentPage, setCurrentPage] = useState('About');
 
+  useEffect(() => {
+    
+  })
+
   const renderPage = () => {
     if (currentPage === 'About') {
       return < About />
@@ -20,7 +24,10 @@ function Application() {
     }
     if (currentPage === 'Contact') {
       return < Contact />
-    } return < Resume />
+    } 
+    if (currentPage === "Resume") {
+      return < Resume />
+    }
   }
 
   const handlePageChange = (page) => setCurrentPage(page);
